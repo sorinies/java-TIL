@@ -38,7 +38,7 @@
 	- 논리형 : boolean
 2. 참조형(Reference Type) 변수
 	- 기본형을 제외한 모든 자료를 가리키고 있는 변수. 변수가 가리키는 것은 실제 값이 아닌 그 값이 저장된 메모리의 위치.
-	- 주로 배열이나 객체 등을 가리키는데에 사용된다. (Javascript에서는 배열도 객체로 취급)
+	- 주로 배열이나 객체 등을 가리키는데에 사용된다. 
 	
 #### 상수(Constant)
 상수는 변수와 마찬가지로 이름을 가지고 있는 메모리 공간으로 이러한 상수는 선언과 동시에 반드시 초기화해야 함.
@@ -63,7 +63,7 @@
 ```java
 String[][] str1 = new String[3];
 String str2[][] = new String[3];
-String[] str3[] = new String[] // 다차원 배열 선언방법;
+String[] str3[] = new String[] // 가변 배열 선언방법;
 ```
 
 ### 객체 지향 프로그래밍
@@ -79,7 +79,7 @@ String[] str3[] = new String[] // 다차원 배열 선언방법;
 
 ### 인스턴스(Instance)
 클래스를 사용하기 위해서는 우선 해당 클래스 타입의 객체를 선언해야 함.
-이렇게 클래스로 부터 객체르 선언하는 과정을 클래스의 인스턴스화 라고 함.
+이렇게 클래스로 부터 객체를 선언하는 과정을 클래스의 인스턴스화 라고 함.
 즉, 이렇게 선언된 해당 클래스 타입의 객체를 인스턴스라고 하며 메모리에 할당된 객체를 의미함. (= 클래스로부터 생성된 객체)
 
 ### 메소드
@@ -99,20 +99,7 @@ String[] str3[] = new String[] // 다차원 배열 선언방법;
 * 조건: 
 	- 메소드의 이름이 같아야 함.
 	- 메소드의 시그니처, 즉 매개변수의 개수 또는 타입이 달라야 함.
-* 메소드 오버로딩의 예: print() 메소드
-
-```java
-	System.out.println();
-	System.out.println(boolean x);
-	System.out.println(char x);
-	System.out.println(char[] x);
-	System.out.println(double x);
-	System.out.println(float x);
-	System.out.println(int x);
-	System.out.println(long x);
-	System.out.println(Object x);
-	System.out.println(String x);
-```
+* 메소드 오버로딩의 예: print(), toString() 메소드
 
 ### 제어자(modifier)
 클래스와 클래스 멤버의 선언 시 사용하여 부가적인 의미를 부여하는 키워드를 의미.
@@ -214,3 +201,8 @@ Child ch = new Child();   // 허용
 Parent pc = new Child();  // 허용
 Child cp = new Parent();  // 오류 발생.
 ```
+
+---
+#### 참조
+http://www.tcpschool.com/java/intro
+https://wikidocs.net/276
